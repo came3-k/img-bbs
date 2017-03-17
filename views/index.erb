@@ -2,13 +2,44 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Sample</title>
+  <title>画像掲示板</title>
   <link href="/css/main.css" media="screen" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div class="container">
-    <h1>Sample</h1>
+    <h1>画像を投稿できる掲示板</h1>
+
+    <% posts.each do |post| %>
+    <div class="post">
+    	<div class="post-text">
+    		<%= escape_html post["text"] %>
+    	</div>
+    	<div class="post-image">
+    		<a href="/uploads/<%= post["img_file_name"] %>"べつのたぶでひらく name="<%= post["img_file_name"] %>を別のタブで開く" target="_blank"><img src="/uploads/<%= post["img_file_name"] %>" alt="<%= post["img_file_name"] %>" class="ex-image"></a>
+    	</div>
+    	<div class="tools">
+    		<span class="add-star" data-post-id="<%= post["id"] %>"><%= post["star_count"] %></span>
+    	</div>
+    </div>
+    <% end %>
+
+    <div class="submit">
+    <form method="post" id="ex-form" action="/" enctype="multipart/form-data">
+    	<div class="form-text">
+    		<textarea rows="10" cols="30" name="ex_text" id="ex-text"></textarea>
+    	</div>
+    	<div class="form-file">
+    		<input type="file" name="file">
+    	</div>
+    	<dir class="form-submit">
+    		<input type="submit" name="submit" value="submit">
+    	</dir>
+    </form>
+    </div>
+
   </div>
+
+  <script src="/js/jquery-3.2.0.js"></script>
   <script src="/js/main.js"></script>
 </body>
 </html>
