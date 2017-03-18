@@ -18,12 +18,18 @@
 * SQLite
 
 ##実際の画面
+テキストエリア
+![テキストエリアのスクリーンショット](http://i.imgur.com/TwS8eOy.png "テキストエリアのスクリーンショット")
+
 実際にテキストと画像を投稿してみました。
-![投稿してみた実際のスクリーンショット](http://i.imgur.com/YtjVUF6.png "サンプル")
+![投稿してみた実際のスクリーンショット](http://i.imgur.com/YtjVUF6.png "投稿してみた実際のスクリーンショット")
 
 ハートの数を増やしてみた実行結果
-![ハート増える](http://i.imgur.com/rCmIndS.gif "サンプル")
+![ハート増える](http://i.imgur.com/rCmIndS.gif "ハート増える")
 
 ##おわりに
 >著者によるサポートページ
 >https://github.com/catatsuy/support_programming
+>
+>画像は「いらすとや」様
+>http://www.irasutoya.com/
