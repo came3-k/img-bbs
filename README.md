@@ -13,9 +13,13 @@
 * データベース(今回はSQLite) 
   
 ## 使っているもの
+* HTML
+* CSS
 * Ruby
+* Sinatra
+* jQuery
 * SQLite
-  
+  
 ## 実際の画面
 テキストエリア  
 ![テキストエリアのスクリーンショット](http://i.imgur.com/TwS8eOy.png "テキストエリアのスクリーンショット")  
